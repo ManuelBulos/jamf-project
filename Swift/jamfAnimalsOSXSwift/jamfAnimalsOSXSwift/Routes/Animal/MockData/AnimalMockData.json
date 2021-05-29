@@ -1,0 +1,29 @@
+[
+   {
+      "animal":"dog",
+      "details":{
+         "genus":"Canis",
+         "sound":"Bark",
+         "habitat":"Dog House",
+         "food":"Kibbles & Bits"
+      }
+   },
+   {
+      "animal":"lion",
+      "details":{
+         "genus":"Panthera",
+         "sound":"Roar",
+         "habitat":"Savannah",
+         "food":"Antelope"
+      }
+   },
+   {
+      "animal":"horse",
+      "details":{
+         "genus":"Equus",
+         "sound":"Neigh",
+         "habitat":"Farm",
+         "food":"Hay"
+      }
+   }
+]

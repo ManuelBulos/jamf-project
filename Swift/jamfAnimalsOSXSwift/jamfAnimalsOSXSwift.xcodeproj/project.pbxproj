@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F3D44E92133FD5E008A669A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3D44E82133FD5E008A669A /* AppDelegate.swift */; };
+		5F3D44EB2133FD5E008A669A /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3D44EA2133FD5E008A669A /* AnimalViewController.swift */; };
+		5F3D44ED2133FD5E008A669A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F3D44EC2133FD5E008A669A /* Assets.xcassets */; };
+		5F3D44F02133FD5E008A669A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3D44EE2133FD5E008A669A /* Main.storyboard */; };
+		5F3D45072133FD5E008A669A /* AnimalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3D45062133FD5E008A669A /* AnimalUITests.swift */; };
+		640D4703264DB44F00977156 /* AnimalDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640D4702264DB44F00977156 /* AnimalDetails.swift */; };
+		640D4715264DB72500977156 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640D4714264DB72500977156 /* Network.swift */; };
+		640D4725264DB77200977156 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640D4724264DB77200977156 /* Endpoint.swift */; };
+		64535E9E264DE81F001C02DE /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64535E9D264DE81F001C02DE /* HTTPStatusCode.swift */; };
+		6470731D264EACCD002842B9 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6470731C264EACCD002842B9 /* NetworkProtocol.swift */; };
+		64707325264EACEA002842B9 /* NetworkMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64707324264EACEA002842B9 /* NetworkMock.swift */; };
+		64707336264EB4DC002842B9 /* AnimalMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 64707335264EB4DC002842B9 /* AnimalMockData.json */; };
+		6470733E264EB800002842B9 /* JSONFileDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6470733D264EB800002842B9 /* JSONFileDecoder.swift */; };
+		64707354264EC8F3002842B9 /* AnimalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64707353264EC8F3002842B9 /* AnimalPresenter.swift */; };
+		64707359264EC901002842B9 /* AnimalPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64707358264EC901002842B9 /* AnimalPresenterProtocol.swift */; };
+		6470735E264ECA2F002842B9 /* AnimalViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6470735D264ECA2E002842B9 /* AnimalViewProtocol.swift */; };
+		6471E69E264DBCE800A8A2E6 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6471E69D264DBCE800A8A2E6 /* NetworkError.swift */; };
+		6471E6A6264DBDAC00A8A2E6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6471E6A5264DBDAC00A8A2E6 /* Constants.swift */; };
+		6471E6AB264DBE8900A8A2E6 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6471E6AA264DBE8900A8A2E6 /* Animal.swift */; };
+		64850DE4264DC72B009EC24B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64850DE3264DC72B009EC24B /* main.swift */; };
+		64850DE9264DC875009EC24B /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64850DE8264DC875009EC24B /* Identifiable.swift */; };
+		64F6A722264EE9E300508484 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6A721264EE9E300508484 /* Regex.swift */; };
+		64F6A72D264EF61F00508484 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6A72C264EF61F00508484 /* EndpointTests.swift */; };
+		64F6A735264EF77900508484 /* JSONFileDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6A734264EF77900508484 /* JSONFileDecoderTests.swift */; };
+		64F6A73A264EF7B700508484 /* NetworkMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6A739264EF7B700508484 /* NetworkMockTests.swift */; };
+		64F6A745264F005400508484 /* RegexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6A744264F005400508484 /* RegexTests.swift */; };
+		64F6A74D264F006E00508484 /* IdentifiableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6A74C264F006E00508484 /* IdentifiableTests.swift */; };
+		64F6A758264F026600508484 /* AnimalViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6A757264F026600508484 /* AnimalViewControllerTests.swift */; };
+		64F6A760264F2BEC00508484 /* AnimalPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6A75F264F2BEC00508484 /* AnimalPresenterTests.swift */; };
+		64F6A76B264F2DB500508484 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6A76A264F2DB500508484 /* AppDelegateTests.swift */; };
+		64F6A773264F3A1700508484 /* NetworkErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6A772264F3A1700508484 /* NetworkErrorTests.swift */; };
+		64F6A77B264F3B7500508484 /* HTTPStatusCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6A77A264F3B7500508484 /* HTTPStatusCodeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F3D44F82133FD5E008A669A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F3D44DD2133FD5E008A669A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F3D44E42133FD5E008A669A;
+			remoteInfo = jamfAnimalsOSXSwift;
+		};
+		5F3D45032133FD5E008A669A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F3D44DD2133FD5E008A669A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F3D44E42133FD5E008A669A;
+			remoteInfo = jamfAnimalsOSXSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F3D44E52133FD5E008A669A /* jamfAnimalsOSXSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jamfAnimalsOSXSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3D44E82133FD5E008A669A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F3D44EA2133FD5E008A669A /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
+		5F3D44EC2133FD5E008A669A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F3D44EF2133FD5E008A669A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F3D44F12133FD5E008A669A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F3D44F22133FD5E008A669A /* jamfAnimalsOSXSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = jamfAnimalsOSXSwift.entitlements; sourceTree = "<group>"; };
+		5F3D44F72133FD5E008A669A /* jamfAnimalsOSXSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jamfAnimalsOSXSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3D44FD2133FD5E008A669A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F3D45022133FD5E008A669A /* jamfAnimalsOSXSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jamfAnimalsOSXSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3D45062133FD5E008A669A /* AnimalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalUITests.swift; sourceTree = "<group>"; };
+		5F3D45082133FD5E008A669A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		640D4702264DB44F00977156 /* AnimalDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetails.swift; sourceTree = "<group>"; };
+		640D4714264DB72500977156 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		640D4724264DB77200977156 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		64535E9D264DE81F001C02DE /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		6470731C264EACCD002842B9 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		64707324264EACEA002842B9 /* NetworkMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMock.swift; sourceTree = "<group>"; };
+		64707335264EB4DC002842B9 /* AnimalMockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AnimalMockData.json; sourceTree = "<group>"; };
+		6470733D264EB800002842B9 /* JSONFileDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileDecoder.swift; sourceTree = "<group>"; };
+		64707353264EC8F3002842B9 /* AnimalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPresenter.swift; sourceTree = "<group>"; };
+		64707358264EC901002842B9 /* AnimalPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPresenterProtocol.swift; sourceTree = "<group>"; };
+		6470735D264ECA2E002842B9 /* AnimalViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewProtocol.swift; sourceTree = "<group>"; };
+		6471E69D264DBCE800A8A2E6 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		6471E6A5264DBDAC00A8A2E6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6471E6AA264DBE8900A8A2E6 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		64850DE3264DC72B009EC24B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		64850DE8264DC875009EC24B /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		64F6A721264EE9E300508484 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		64F6A72C264EF61F00508484 /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		64F6A734264EF77900508484 /* JSONFileDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileDecoderTests.swift; sourceTree = "<group>"; };
+		64F6A739264EF7B700508484 /* NetworkMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMockTests.swift; sourceTree = "<group>"; };
+		64F6A744264F005400508484 /* RegexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexTests.swift; sourceTree = "<group>"; };
+		64F6A74C264F006E00508484 /* IdentifiableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableTests.swift; sourceTree = "<group>"; };
+		64F6A757264F026600508484 /* AnimalViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewControllerTests.swift; sourceTree = "<group>"; };
+		64F6A75F264F2BEC00508484 /* AnimalPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalPresenterTests.swift; sourceTree = "<group>"; };
+		64F6A76A264F2DB500508484 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		64F6A772264F3A1700508484 /* NetworkErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorTests.swift; sourceTree = "<group>"; };
+		64F6A77A264F3B7500508484 /* HTTPStatusCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCodeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F3D44E22133FD5E008A669A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3D44F42133FD5E008A669A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3D44FF2133FD5E008A669A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F3D44DC2133FD5E008A669A = {
+			isa = PBXGroup;
+			children = (
+				5F3D44E72133FD5E008A669A /* jamfAnimalsOSXSwift */,
+				5F3D44FA2133FD5E008A669A /* jamfAnimalsOSXSwiftTests */,
+				5F3D45052133FD5E008A669A /* jamfAnimalsOSXSwiftUITests */,
+				5F3D44E62133FD5E008A669A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F3D44E62133FD5E008A669A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F3D44E52133FD5E008A669A /* jamfAnimalsOSXSwift.app */,
+				5F3D44F72133FD5E008A669A /* jamfAnimalsOSXSwiftTests.xctest */,
+				5F3D45022133FD5E008A669A /* jamfAnimalsOSXSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F3D44E72133FD5E008A669A /* jamfAnimalsOSXSwift */ = {
+			isa = PBXGroup;
+			children = (
+				5F3D44E82133FD5E008A669A /* AppDelegate.swift */,
+				64850DE3264DC72B009EC24B /* main.swift */,
+				640D473C264DB8D400977156 /* Network */,
+				64850DE2264DC6C5009EC24B /* Routes */,
+				645A2C42264DD683009CAD5E /* Utils */,
+				5F3D44EC2133FD5E008A669A /* Assets.xcassets */,
+				5F3D44EE2133FD5E008A669A /* Main.storyboard */,
+				5F3D44F12133FD5E008A669A /* Info.plist */,
+				5F3D44F22133FD5E008A669A /* jamfAnimalsOSXSwift.entitlements */,
+			);
+			path = jamfAnimalsOSXSwift;
+			sourceTree = "<group>";
+		};
+		5F3D44FA2133FD5E008A669A /* jamfAnimalsOSXSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				64F6A734264EF77900508484 /* JSONFileDecoderTests.swift */,
+				64F6A77A264F3B7500508484 /* HTTPStatusCodeTests.swift */,
+				64F6A739264EF7B700508484 /* NetworkMockTests.swift */,
+				64F6A772264F3A1700508484 /* NetworkErrorTests.swift */,
+				64F6A72C264EF61F00508484 /* EndpointTests.swift */,
+				64F6A74C264F006E00508484 /* IdentifiableTests.swift */,
+				64F6A744264F005400508484 /* RegexTests.swift */,
+				64F6A757264F026600508484 /* AnimalViewControllerTests.swift */,
+				64F6A75F264F2BEC00508484 /* AnimalPresenterTests.swift */,
+				64F6A76A264F2DB500508484 /* AppDelegateTests.swift */,
+				5F3D44FD2133FD5E008A669A /* Info.plist */,
+			);
+			path = jamfAnimalsOSXSwiftTests;
+			sourceTree = "<group>";
+		};
+		5F3D45052133FD5E008A669A /* jamfAnimalsOSXSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F3D45062133FD5E008A669A /* AnimalUITests.swift */,
+				5F3D45082133FD5E008A669A /* Info.plist */,
+			);
+			path = jamfAnimalsOSXSwiftUITests;
+			sourceTree = "<group>";
+		};
+		640D473C264DB8D400977156 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6470733D264EB800002842B9 /* JSONFileDecoder.swift */,
+				6470731C264EACCD002842B9 /* NetworkProtocol.swift */,
+				640D4714264DB72500977156 /* Network.swift */,
+				64707324264EACEA002842B9 /* NetworkMock.swift */,
+				6471E69D264DBCE800A8A2E6 /* NetworkError.swift */,
+				640D4724264DB77200977156 /* Endpoint.swift */,
+				64535E9D264DE81F001C02DE /* HTTPStatusCode.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		640D473D264DB8F800977156 /* Animal */ = {
+			isa = PBXGroup;
+			children = (
+				64707352264EC8DD002842B9 /* Presenter */,
+				64850DE1264DC6BA009EC24B /* View */,
+				64C2FAED264DC5710035A9DE /* Model */,
+				64707345264EBBDD002842B9 /* MockData */,
+			);
+			path = Animal;
+			sourceTree = "<group>";
+		};
+		645A2C42264DD683009CAD5E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6471E6A5264DBDAC00A8A2E6 /* Constants.swift */,
+				64850DE8264DC875009EC24B /* Identifiable.swift */,
+				64F6A721264EE9E300508484 /* Regex.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		64707345264EBBDD002842B9 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				64707335264EB4DC002842B9 /* AnimalMockData.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		64707352264EC8DD002842B9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				64707358264EC901002842B9 /* AnimalPresenterProtocol.swift */,
+				64707353264EC8F3002842B9 /* AnimalPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		64850DE1264DC6BA009EC24B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6470735D264ECA2E002842B9 /* AnimalViewProtocol.swift */,
+				5F3D44EA2133FD5E008A669A /* AnimalViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64850DE2264DC6C5009EC24B /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				640D473D264DB8F800977156 /* Animal */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		64C2FAED264DC5710035A9DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6471E6AA264DBE8900A8A2E6 /* Animal.swift */,
+				640D4702264DB44F00977156 /* AnimalDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F3D44E42133FD5E008A669A /* jamfAnimalsOSXSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F3D450B2133FD5E008A669A /* Build configuration list for PBXNativeTarget "jamfAnimalsOSXSwift" */;
+			buildPhases = (
+				5F3D44E12133FD5E008A669A /* Sources */,
+				5F3D44E22133FD5E008A669A /* Frameworks */,
+				5F3D44E32133FD5E008A669A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jamfAnimalsOSXSwift;
+			productName = jamfAnimalsOSXSwift;
+			productReference = 5F3D44E52133FD5E008A669A /* jamfAnimalsOSXSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F3D44F62133FD5E008A669A /* jamfAnimalsOSXSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F3D450E2133FD5E008A669A /* Build configuration list for PBXNativeTarget "jamfAnimalsOSXSwiftTests" */;
+			buildPhases = (
+				5F3D44F32133FD5E008A669A /* Sources */,
+				5F3D44F42133FD5E008A669A /* Frameworks */,
+				5F3D44F52133FD5E008A669A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F3D44F92133FD5E008A669A /* PBXTargetDependency */,
+			);
+			name = jamfAnimalsOSXSwiftTests;
+			productName = jamfAnimalsOSXSwiftTests;
+			productReference = 5F3D44F72133FD5E008A669A /* jamfAnimalsOSXSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F3D45012133FD5E008A669A /* jamfAnimalsOSXSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F3D45112133FD5E008A669A /* Build configuration list for PBXNativeTarget "jamfAnimalsOSXSwiftUITests" */;
+			buildPhases = (
+				5F3D44FE2133FD5E008A669A /* Sources */,
+				5F3D44FF2133FD5E008A669A /* Frameworks */,
+				5F3D45002133FD5E008A669A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F3D45042133FD5E008A669A /* PBXTargetDependency */,
+			);
+			name = jamfAnimalsOSXSwiftUITests;
+			productName = jamfAnimalsOSXSwiftUITests;
+			productReference = 5F3D45022133FD5E008A669A /* jamfAnimalsOSXSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F3D44DD2133FD5E008A669A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1210;
+				ORGANIZATIONNAME = Jamf;
+				TargetAttributes = {
+					5F3D44E42133FD5E008A669A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5F3D44F62133FD5E008A669A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5F3D44E42133FD5E008A669A;
+					};
+					5F3D45012133FD5E008A669A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5F3D44E42133FD5E008A669A;
+					};
+				};
+			};
+			buildConfigurationList = 5F3D44E02133FD5E008A669A /* Build configuration list for PBXProject "jamfAnimalsOSXSwift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F3D44DC2133FD5E008A669A;
+			productRefGroup = 5F3D44E62133FD5E008A669A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F3D44E42133FD5E008A669A /* jamfAnimalsOSXSwift */,
+				5F3D44F62133FD5E008A669A /* jamfAnimalsOSXSwiftTests */,
+				5F3D45012133FD5E008A669A /* jamfAnimalsOSXSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F3D44E32133FD5E008A669A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64707336264EB4DC002842B9 /* AnimalMockData.json in Resources */,
+				5F3D44ED2133FD5E008A669A /* Assets.xcassets in Resources */,
+				5F3D44F02133FD5E008A669A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3D44F52133FD5E008A669A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3D45002133FD5E008A669A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F3D44E12133FD5E008A669A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6470733E264EB800002842B9 /* JSONFileDecoder.swift in Sources */,
+				6470731D264EACCD002842B9 /* NetworkProtocol.swift in Sources */,
+				64535E9E264DE81F001C02DE /* HTTPStatusCode.swift in Sources */,
+				5F3D44EB2133FD5E008A669A /* AnimalViewController.swift in Sources */,
+				64850DE4264DC72B009EC24B /* main.swift in Sources */,
+				64F6A722264EE9E300508484 /* Regex.swift in Sources */,
+				6471E6A6264DBDAC00A8A2E6 /* Constants.swift in Sources */,
+				640D4725264DB77200977156 /* Endpoint.swift in Sources */,
+				6471E6AB264DBE8900A8A2E6 /* Animal.swift in Sources */,
+				640D4715264DB72500977156 /* Network.swift in Sources */,
+				64707354264EC8F3002842B9 /* AnimalPresenter.swift in Sources */,
+				5F3D44E92133FD5E008A669A /* AppDelegate.swift in Sources */,
+				64707325264EACEA002842B9 /* NetworkMock.swift in Sources */,
+				64850DE9264DC875009EC24B /* Identifiable.swift in Sources */,
+				640D4703264DB44F00977156 /* AnimalDetails.swift in Sources */,
+				64707359264EC901002842B9 /* AnimalPresenterProtocol.swift in Sources */,
+				6470735E264ECA2F002842B9 /* AnimalViewProtocol.swift in Sources */,
+				6471E69E264DBCE800A8A2E6 /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3D44F32133FD5E008A669A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64F6A73A264EF7B700508484 /* NetworkMockTests.swift in Sources */,
+				64F6A76B264F2DB500508484 /* AppDelegateTests.swift in Sources */,
+				64F6A735264EF77900508484 /* JSONFileDecoderTests.swift in Sources */,
+				64F6A773264F3A1700508484 /* NetworkErrorTests.swift in Sources */,
+				64F6A760264F2BEC00508484 /* AnimalPresenterTests.swift in Sources */,
+				64F6A72D264EF61F00508484 /* EndpointTests.swift in Sources */,
+				64F6A77B264F3B7500508484 /* HTTPStatusCodeTests.swift in Sources */,
+				64F6A745264F005400508484 /* RegexTests.swift in Sources */,
+				64F6A758264F026600508484 /* AnimalViewControllerTests.swift in Sources */,
+				64F6A74D264F006E00508484 /* IdentifiableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3D44FE2133FD5E008A669A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3D45072133FD5E008A669A /* AnimalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F3D44F92133FD5E008A669A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F3D44E42133FD5E008A669A /* jamfAnimalsOSXSwift */;
+			targetProxy = 5F3D44F82133FD5E008A669A /* PBXContainerItemProxy */;
+		};
+		5F3D45042133FD5E008A669A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F3D44E42133FD5E008A669A /* jamfAnimalsOSXSwift */;
+			targetProxy = 5F3D45032133FD5E008A669A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F3D44EE2133FD5E008A669A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F3D44EF2133FD5E008A669A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F3D45092133FD5E008A669A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5F3D450A2133FD5E008A669A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5F3D450C2133FD5E008A669A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = jamfAnimalsOSXSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamf.jamfAnimalsOSXSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F3D450D2133FD5E008A669A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = jamfAnimalsOSXSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamf.jamfAnimalsOSXSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5F3D450F2133FD5E008A669A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = jamfAnimalsOSXSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamf.jamfAnimalsOSXSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jamfAnimalsOSXSwift.app/Contents/MacOS/jamfAnimalsOSXSwift";
+			};
+			name = Debug;
+		};
+		5F3D45102133FD5E008A669A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = jamfAnimalsOSXSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamf.jamfAnimalsOSXSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jamfAnimalsOSXSwift.app/Contents/MacOS/jamfAnimalsOSXSwift";
+			};
+			name = Release;
+		};
+		5F3D45122133FD5E008A669A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = jamfAnimalsOSXSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamf.jamfAnimalsOSXSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = jamfAnimalsOSXSwift;
+			};
+			name = Debug;
+		};
+		5F3D45132133FD5E008A669A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = jamfAnimalsOSXSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamf.jamfAnimalsOSXSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = jamfAnimalsOSXSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F3D44E02133FD5E008A669A /* Build configuration list for PBXProject "jamfAnimalsOSXSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3D45092133FD5E008A669A /* Debug */,
+				5F3D450A2133FD5E008A669A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F3D450B2133FD5E008A669A /* Build configuration list for PBXNativeTarget "jamfAnimalsOSXSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3D450C2133FD5E008A669A /* Debug */,
+				5F3D450D2133FD5E008A669A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F3D450E2133FD5E008A669A /* Build configuration list for PBXNativeTarget "jamfAnimalsOSXSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3D450F2133FD5E008A669A /* Debug */,
+				5F3D45102133FD5E008A669A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F3D45112133FD5E008A669A /* Build configuration list for PBXNativeTarget "jamfAnimalsOSXSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3D45122133FD5E008A669A /* Debug */,
+				5F3D45132133FD5E008A669A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F3D44DD2133FD5E008A669A /* Project object */;
+}
